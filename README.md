@@ -56,3 +56,12 @@ var apple = require('./fruit');
 
 console.log(apple().getInfo());
 ```
+
+### Using NPM packages:
+useful commands:
+```shell
+> npm install # installs deps
+> npm updates # grabs the latest versions of deps
+> npm prune   # removes any unsed deps
+> npm uninstall <module name> # removes a certain module
+```
