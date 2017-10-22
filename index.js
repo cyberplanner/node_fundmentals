@@ -27,13 +27,13 @@ console.log("_________");
 console.log("Building custom modules");
 console.log("_________");
 
-var apple = require('./fruit');
+var fruit = require('./fruit');
 
-console.log(apple().getInfo());
-
-
-var banana = require('./fruit')();
+var banana = fruit("Banana", "Long yellow fruit");
+var cherry = fruit("Cherry", "small red fruit");
 
 banana.setName('Banana');
-console.log(banana.getInfo()); // => { name: 'Apple', description: 'Fruit from the apple tree' }
-// The fruit module will return the same apple object because it was cached before
+console.log(banana.getInfo()); // => { name: 'Banana', description: 'Long yellow fruit' }
+console.log(cherry.getInfo()); // => { name: 'Cherry', description: 'small red fruit' }
+
+// This work now as we create different objects

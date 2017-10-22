@@ -1,7 +1,6 @@
-var name = "Apple",
-  description = "Fruit from the apple tree";
-  
-module.exports = function() {
+module.exports = function(name, desc) {
+  var name = name,
+  description = desc;
   var functions = {
     setName: function(name) {
       this.name = name;
